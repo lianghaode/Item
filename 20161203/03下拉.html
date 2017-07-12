@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<style>
+    #box{
+        height: 200px;
+        width:100px;
+        display: none;
+        background-color:red;
+    }
+
+
+</style>
+<script>
+    window.onload=function () {
+        var oBtn = document.getElementById("btn");
+        var oBox = document.getElementById("box");
+
+        oBtn.onclick = function () {
+            if(oBox.style.display=="block") {
+              oBox.style.display="none";
+
+                oBtn.value="显示";
+
+            }else{
+                oBox.style.display="display";
+                oBtn.value="隐藏";
+
+            }
+
+
+        }
+
+    };
+
+
+</script>
+<body>
+<input type ="button"  id="btn" value="显示">
+<div id="box" >
+
+</div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding:0;
+
+    }
+   li{
+      list-style:none ;
+
+   }
+ul{
+    text-align: center;
+    height: 220px;
+    background-color: rgba(30,30,28,0.6);
+}
+
+    body{
+        background :url("images/01.jpg");
+
+
+    }
+    ul li  {
+margin-top: 50px;
+        width:200px;
+        height:100px;
+        display: inline-block;
+cursor: pointer;
+    }
+
+
+    ul li img{
+        width:100%;
+        display: block;
+
+    }
+</style>
+<body id="body">
+<ul>
+
+    <li><img src="images/01.jpg" id="but1"></li>
+    <li><img src="images/02.jpg" id="but2"></li>
+    <li><img src="images/03.jpg" id="but3"></li>
+</ul>
+
+<script>
+    var oBtn1=document.getElementById("but1");
+    var oBtn2=document.getElementById("but2");
+    var oBtn3=document.getElementById("but3");
+    var body=document.getElementById("body")
+
+    oBtn1.onclick=function () {
+        body.style.background="url(images/01.jpg)"
+    };
+
+    oBtn2.onclick=function () {
+        body.style.background="url(images/02.jpg)"
+    };
+    oBtn3.onclick=function () {
+        body.style.background="url(images/03.jpg)"
+    };
+
+</script>
+
+
+</body>
+</html>
